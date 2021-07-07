@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+  background: url("http://petersparker.com/wp-content/uploads/2021/07/iu-10.jpeg");
+}
+div {
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+  color: yellow;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://petersparker.com/wp-content/uploads/2021/07/raygun.jpeg");
+}
+.second{
+  background-image: url("http://petersparker.com/wp-content/uploads/2021/07/iu-2.jpeg");
+}
+.dessert{
+  background-image: url("http://petersparker.com/wp-content/uploads/2021/07/iu-15.jpeg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Pete's Galactic Imports</h1>
+<h2>They're out of this world!</h2>
+<div class="first">
+  <p>Disintegrator Ray Gun<span class="price">$149</span><br />
+  <small>The Acme Model T-3000 Disintigrator gun is fun for adults and children under serious supervision.  With a range of 1,000 meters, targets large and small can be vaporized in an insant! Targets further out may only catch on fire and explode. Fun for the whole family! Make it a 4th of July nobody forgets! </small></p>
+</div>
+
+<div class="second">
+  <p>Invisibility Pill (7 Day supply)<span class="price">$249</span><br />
+  <small>The Acme Invisibilty Pill is for Adult use only. Take occasionally when the ultimate in concealment is needed, or when alcohol has demanded a demonstration for your similarly drunken buddies. Seriously though, shouldnt you be grown up and starting a family by now?<br />WARNING: The Surgeon General has determined that taking this drug for more than 7 days can result in a permanently shrunken penis.</small></p>
+</div>
+
+<div class="dessert">
+  <p>Invulnerability Pills (7 Day Supply)<span class="price">$199</span><br />
+  <small>Kryptonite proof! One pop of this latest import from Andromeda Galaxy, and Superman won't have anything on you. Impervious to bullets, bombs, covid and Nukes. Lasts 24 hours. Do not take more than one per day, lest paralysis may set in for a few weeks from the shell hardening effects.  </small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
+

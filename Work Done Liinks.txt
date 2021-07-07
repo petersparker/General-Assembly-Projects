@@ -5,6 +5,10 @@ https://dash.generalassemb.ly/Pete275/build-your-own-blog-theme
 
 https://dash.generalassemb.ly/Pete275/build-your-own-business-website
 
+Starting Code:
 https://codepen.io/nevan/pen/GgMXEm
+
+Fixed Code:
+https://codepen.io/275Pete/pen/MWmyZEP
 
 
